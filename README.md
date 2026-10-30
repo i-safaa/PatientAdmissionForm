@@ -29,7 +29,6 @@ The application connects to a database named `HospitalDB` and operates on the `P
 
 ```sql
 CREATE TABLE [dbo].[Patient] (
-    [ID] INT IDENTITY(1,1) PRIMARY KEY,
     [Fname] VARCHAR(50) NOT NULL,
     [Gname] VARCHAR(50) NOT NULL,
     [Age] INT NOT NULL,
