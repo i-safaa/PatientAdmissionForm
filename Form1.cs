@@ -20,6 +20,28 @@ namespace PatientAdmissionForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) ||
+                string.IsNullOrWhiteSpace(textBox3.Text) ||
+                string.IsNullOrWhiteSpace(textBox4.Text) ||
+                string.IsNullOrWhiteSpace(textBox5.Text) ||
+                string.IsNullOrWhiteSpace(textBox6.Text) ||
+                string.IsNullOrWhiteSpace(comboBox1.Text) ||
+                string.IsNullOrWhiteSpace(comboBox2.Text) ||
+                string.IsNullOrWhiteSpace(comboBox3.Text))
+            {
+                MessageBox.Show("يرجى ملء جميع الحقول أولاً!", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(textBox5.Text.Trim(), out int age))
+            {
+                MessageBox.Show("يرجى إدخال عمر صحيح (أرقام فقط)!", "خطأ في الإدخال", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox5.Focus();
+                return;
+            }
+
             con.Open();
             SqlCommand cmd = new SqlCommand("INSERT INTO Patient (Fname, Gname, Age, Ethnicity, ResidentialAddress, Eadd, Gender, BGrop, PNumber) VALUES (@Fname, @Gname, @Age, @Ethnicity, @ResAddress, @Eadd, @Gender, @BGrop, @PNumber)", con);
 
@@ -36,7 +58,6 @@ namespace PatientAdmissionForm
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("تم حفظ بيانات المريض بنجاح!", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
 
             textBox1.Clear();
             textBox2.Clear();

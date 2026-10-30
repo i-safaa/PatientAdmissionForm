@@ -67,7 +67,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1271, 114);
+            this.panel1.Size = new System.Drawing.Size(1267, 114);
             this.panel1.TabIndex = 0;
             // 
             // label14
@@ -316,9 +316,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 752);
+            this.panel2.Location = new System.Drawing.Point(0, 748);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1271, 49);
+            this.panel2.Size = new System.Drawing.Size(1267, 49);
             this.panel2.TabIndex = 20;
             // 
             // button1
@@ -362,6 +362,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximumSize = new System.Drawing.Size(1293, 857);
             this.Name = "Form1";
             this.Text = "Form1";
