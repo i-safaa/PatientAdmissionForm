@@ -37,6 +37,14 @@ namespace PatientAdmissionForm
 
             MessageBox.Show("تم حفظ بيانات المريض بنجاح!", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+
             con.Close();
         }
     }

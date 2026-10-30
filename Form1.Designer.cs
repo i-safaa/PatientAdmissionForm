@@ -123,10 +123,10 @@
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(70, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1135, 29);
+            this.label4.Size = new System.Drawing.Size(1111, 29);
             this.label4.TabIndex = 1;
-            this.label4.Text = "PATIENT DETAITLS                                                                 " +
-    "                                                             ";
+            this.label4.Text = "PATIENT DETAILS                                                                  " +
+    "                                                           ";
             // 
             // label5
             // 
